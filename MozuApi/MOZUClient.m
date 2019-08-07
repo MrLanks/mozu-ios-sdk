@@ -10,7 +10,7 @@
 #import "MOZUClient.h"
 #import "MOZUHeaders.h"
 #import "MOZUResponseHelper.h"
-#import "MOZUUserAuthenticator.h"
+#import "Security/MOZUUserAuthenticator.h"
 #import "MOZUTenantResource.h"
 #import "MOZUAPIVersion.h"
 #import "MOZUAPILogger.h"

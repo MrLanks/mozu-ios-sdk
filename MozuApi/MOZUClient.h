@@ -10,7 +10,7 @@
 #import "JSONModel.h"
 #import "MOZUAPIError.h"
 #import "MOZUAPIContext.h"
-#import "MOZUUserAuthenticator.h"
+#import "Security/MOZUUserAuthenticator.h"
 #import "MOZUURLComponents.h"
 #import "MOZUHeaders.h"
 
