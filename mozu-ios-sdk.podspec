@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Noel Artiles" => "noel_artiles@volusion.com" }
-  s.public_header_files = ""
+  s.public_header_files = "MozuApi/*.h","MozuApi/**/**/*.h"
   s.source           = { :git => "https://github.com/MrLanks/mozu-ios-sdk.git" }
   #s.source           = { :path => '~/projects/git/mozu-ios-sdk' }
   s.social_media_url = 'https://twitter.com/NAME'
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.header_mappings_dir = 'MozuApi'
   # s.header_dir = 'Classes'
-  s.source_files = 'MozuApi/*.{m,h}'
+  s.source_files = 'MozuApi/*.{m,h}','MozuApi/Cache/**/*.{m,h}','MozuApi/Clients/**/*.{m,h}','MozuApi/Contracts/**/*.{m,h}','MozuApi/Resources/**/*.{m,h}','MozuApi/Security/**/*.{m,h}','MozuApi/Urls/**/*.{m,h}','MozuApi/Utilities/**/*.{m,h}'
 
 
   s.ios.exclude_files = 'MozuApi/osx'
@@ -39,34 +39,5 @@ Pod::Spec.new do |s|
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
   s.dependency 'JSONModel'
   s.dependency 'CocoaLumberjack'
-
-  s.subspec 'Cache' do |ss|
-    ss.source_files = 'MozuApi/Cache/**/*.{m,h}'
-  end
-
-  s.subspec 'Clients' do |ss|
-    ss.source_files = 'MozuApi/Clients/**/*.{m,h}'
-  end
-
-  s.subspec 'Contracts' do |ss|
-    ss.source_files = 'MozuApi/Contracts/**/*.{m,h}'
-  end
-
-  s.subspec 'Resources' do |ss|
-    ss.source_files = 'MozuApi/Resources/**/*.{m,h}'
-  end
-
-  s.subspec 'Security' do |ss|
-    ss.source_files = 'MozuApi/Security/**/*.{m,h}'
-    ss.dependency 'mozu-ios-sdk/Contracts'
-  end
-
-  s.subspec 'Urls' do |ss|
-    ss.source_files = 'MozuApi/Urls/**/*.{m,h}'
-  end
-
-  s.subspec 'Utilities' do |ss|
-    ss.source_files = 'MozuApi/Utilities/**/*.{m,h}'
-  end
 
 end
