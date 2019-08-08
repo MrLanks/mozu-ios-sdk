@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Noel Artiles" => "noel_artiles@volusion.com" }
   s.public_header_files = "MozuApi/*.h"
-  s.source           = { :git => "https://github.com/Mozu/mozu-ios-sdk.git" }
+  s.source           = { :git => "https://github.com/MrLanks/mozu-ios-sdk.git" }
   #s.source           = { :path => '~/projects/git/mozu-ios-sdk' }
   s.social_media_url = 'https://twitter.com/NAME'
 
@@ -58,6 +58,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Security' do |ss|
     ss.source_files = 'MozuApi/Security/**/*.{m,h}'
+    ss.dependency 'mozu-ios-sdk/Contracts'
   end
 
   s.subspec 'Urls' do |ss|
