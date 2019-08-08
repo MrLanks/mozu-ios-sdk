@@ -59,6 +59,10 @@ Pod::Spec.new do |s|
   s.subspec 'Security' do |ss|
     ss.source_files = 'MozuApi/Security/**/*.{m,h}'
     ss.dependency 'mozu-ios-sdk/Contracts'
+    ss.xcconfig = {
+      'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited)',
+      'HEADER_SEARCH_PATHS' => '$(inherited)'
+    }
   end
 
   s.subspec 'Urls' do |ss|
