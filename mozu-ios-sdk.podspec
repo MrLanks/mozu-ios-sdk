@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.header_mappings_dir = 'MozuApi'
   # s.header_dir = 'Classes'
-  s.source_files = 'MozuApi/*.{m,h},'MozuApi/Cache/**/*.{m,h}','MozuApi/Clients/**/*.{m,h}','MozuApi/Contracts/**/*.{m,h}','MozuApi/Resources/**/*.{m,h}','MozuApi/Security/**/*.{m,h},'MozuApi/Urls/**/*.{m,h}','MozuApi/Utilities/**/*.{m,h}'
+  s.source_files = 'MozuApi/*.{m,h}','MozuApi/Cache/**/*.{m,h}','MozuApi/Clients/**/*.{m,h}','MozuApi/Contracts/**/*.{m,h}','MozuApi/Resources/**/*.{m,h}','MozuApi/Security/**/*.{m,h},'MozuApi/Urls/**/*.{m,h}','MozuApi/Utilities/**/*.{m,h}'
 
 
   s.ios.exclude_files = 'MozuApi/osx'
