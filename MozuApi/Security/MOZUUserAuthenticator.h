@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Contracts/MOZUAuthTicket.h"
+#import "MOZUAuthTicket.h"
 #import "MOZUAPIError.h"
 
 @class MOZUUserAuthInfo;
